@@ -1,0 +1,96 @@
+It sounds like you’re referring to a **Naive Bayes** classifier approach for spam email detection. Here's how you can modify your `README.md` to highlight that the project uses a **Naive Bayes** classifier for email classification.
+
+### Updated `README.md`:
+
+```markdown
+# Spam Email Detection System (Naive Bayes Classifier)
+
+This project implements a **Spam Email Detection System** using a **Naive Bayes** classifier to classify emails as "Spam" or "Not Spam" based on their content. The system utilizes a pre-trained model and a TF-IDF vectorizer to transform and classify emails, providing an easy-to-use and interactive interface for users to test classification with their own email content.
+
+## Features
+- **Fast and Accurate**: Classifies emails quickly and accurately using the Naive Bayes algorithm.
+- **Interactive**: Users can input their email content and instantly get classification results.
+- **Visual**: The app provides visual feedback with icons indicating whether an email is spam or not.
+- **Secure**: The system processes the email content locally, ensuring privacy.
+
+## Naive Bayes Classifier
+
+The core of this spam email detection system is a **Naive Bayes classifier**, which is a probabilistic machine learning model based on Bayes' Theorem. It is particularly effective for text classification tasks due to its simplicity and speed.
+
+The **Naive Bayes** algorithm is well-suited for the problem of spam detection because it works well with high-dimensional data (like the bag-of-words representation used here) and can efficiently handle large datasets.
+
+## Installation
+
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/Maheswari-184/Q-Techsolutions-Internship.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd spam-email-detection
+   ```
+
+3. Create a virtual environment and install the required dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # For macOS/Linux
+   venv\Scripts\activate     # For Windows
+   ```
+
+4. Install the dependencies from `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Make sure you have the pre-trained model and vectorizer files:
+   - `spam_model.pkl`: The trained Naive Bayes model.
+   - `tfidf_vectorizer.pkl`: The TF-IDF vectorizer used to transform email content.
+
+2. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+
+3. Once the app is running, open the provided local URL in your browser to start classifying emails.
+
+## Pages
+
+The app has two pages:
+1. **Home**: Classify your email content as "Spam" or "Not Spam".
+2. **Accuracy Metrics**: View the accuracy and classification report of the Naive Bayes model.
+
+## Accuracy Metrics
+
+- The model evaluates its performance using accuracy, precision, recall, and F1-score.
+- The results are displayed in an easy-to-read classification report format.
+
+## Technologies Used
+
+- **Streamlit**: For building the interactive web application.
+- **scikit-learn**: For implementing the Naive Bayes classifier and vectorization.
+- **pandas**: For data manipulation and analysis.
+- **NumPy**: For numerical operations.
+- **Pickle**: For saving and loading the trained Naive Bayes model and vectorizer.
+- **Pillow**: For image processing.
+
+## License
+
+This project is licensed under the MIT License 
+
+## Acknowledgements
+
+- The dataset used for training the Naive Bayes model is sourced from publicly available spam email datasets.
+- Thank you to the Streamlit and scikit-learn teams for providing powerful libraries for building machine learning models and interactive applications.
+
+## Authors
+
+- **Maheswari**: Developer
+```
+
+### Key Changes
+- **Naive Bayes Classifier**: Added more context about the use of the Naive Bayes algorithm.
+- **Naive Bayes Explanation**: A brief explanation of why **Naive Bayes** is effective for text classification (especially for spam detection).
+
